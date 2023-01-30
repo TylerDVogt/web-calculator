@@ -1,0 +1,13 @@
+#number-buttons button {
+    width:100px;
+    height:75px;
+}
+
+#result-textbox{
+    width: 405px;
+    height:30px;
+}
+
+body{
+    text-align: center;
+}
