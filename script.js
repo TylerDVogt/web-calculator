@@ -31,10 +31,16 @@ function inputKeys(button){
                 break;
         }
     }else{
-        if(button.textContent === '='){
-            calculate(elem);
-        }else{
-            elem.value += button.textContent;
+        switch(button.textContent){
+            case '=':
+                calculate(elem);
+                break;
+            case 'C':
+                elem.value = "";
+                break;
+            default:
+                elem.value += button.textContent;
+                break;
         }
         button.blur();//Removes focus from button
     }
